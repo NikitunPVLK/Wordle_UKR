@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wordle_Ukr</string>
+    <string name="app_name_ua">Вордлі</string>
+    <string name="hint">Підказка</string>
+    <string name="backspace_description">Видалити</string>
+    <string name="submit_key_text">Ввести</string>
+    <string name="alphabet">ЙЦУКЕНГҐШЩЗХЇФІВАПРОЛДЖЄ\'ЯЧСМИТЬБЮ</string>
+</resources>
