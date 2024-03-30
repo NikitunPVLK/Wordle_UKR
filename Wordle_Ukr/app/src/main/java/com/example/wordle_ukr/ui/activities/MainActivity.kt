@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.wordle_ukr.R
 import com.example.wordle_ukr.ui.screens.game_screen.GameScreen
-import com.example.wordle_ukr.ui.theme.Wordle_UkrTheme
+import com.example.wordle_ukr.ui.theme.WordleUkrTheme
 import com.example.wordle_ukr.ui.view_models.GameViewModel
 import com.example.wordle_ukr.ui.view_models.ViewModelFactory
 
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Wordle_UkrTheme {
+            WordleUkrTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),

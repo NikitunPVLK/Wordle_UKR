@@ -13,6 +13,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -64,10 +65,10 @@ fun LetterContainer(
     modifier: Modifier = Modifier
 ) {
     val color = when(letter.state) {
-        LetterState.UNDEFINED -> Color.White
-        LetterState.CORRECT -> Color.Green
-        LetterState.DISPOSITION -> Color.Yellow
-        LetterState.WRONG -> Color.Gray
+        LetterState.UNDEFINED -> MaterialTheme.colorScheme.primaryContainer
+        LetterState.CORRECT -> MaterialTheme.colorScheme.secondary
+        LetterState.DISPOSITION -> MaterialTheme.colorScheme.tertiary
+        LetterState.WRONG -> MaterialTheme.colorScheme.error
     }
     Card(
         modifier = modifier
