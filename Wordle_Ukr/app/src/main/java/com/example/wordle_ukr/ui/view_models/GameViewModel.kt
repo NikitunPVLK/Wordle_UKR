@@ -20,6 +20,8 @@ class GameViewModel(
     private var currentLine: Int = 0
     private var currentLetterPosition: Int = 0
 
+    private lateinit var hintIndexes: MutableList<Int>
+
     private var _helperText = MutableStateFlow("")
     val helperText
         get() = _helperText.asStateFlow()
@@ -31,11 +33,18 @@ class GameViewModel(
     private fun restartGame(firstTime: Boolean) {
 //        hiddenWord = "абоба"
         hiddenWord = wordsList.random()
-        initialize(firstTime)
+        hintIndexes = mutableListOf(0, 1, 2, 3, 4)
+        hintIndexes.shuffle()
+        initializeGameField(firstTime)
     }
 
     fun onKeyClicked(char: String) {
         if (currentLetterPosition <= 4) {
+            if (_gameField.value[currentLine][currentLetterPosition].state == LetterState.CORRECT) {
+                currentLetterPosition = _gameField.value[currentLine].indexOfFirst {
+                    it.char == ""
+                }
+            }
 
             _gameField.update {
                 val newList = it.map { list -> list.toMutableList() }.toMutableList()
@@ -49,7 +58,12 @@ class GameViewModel(
 
     fun onDeleteClicked() {
         if (currentLetterPosition > 0) {
-            currentLetterPosition--
+            val letterToDelete = _gameField.value[currentLine].findLast {
+                it.state != LetterState.CORRECT && it.char != ""
+            }
+            currentLetterPosition = _gameField.value[currentLine].indexOfLast {
+                it.char == letterToDelete?.char
+            }
             _gameField.update {
                 val newList = it.map { list -> list.toMutableList() }.toMutableList()
                 newList[currentLine][currentLetterPosition] = Letter("", LetterState.UNDEFINED)
@@ -83,15 +97,15 @@ class GameViewModel(
             _helperText.value = "Не є словом :/"
             currentLine--
             _gameField.update {
-                val newList = it.map { list -> list.toMutableList() }.toMutableList()
-                newList[currentLine] = mutableListOf(
-                    Letter("", LetterState.UNDEFINED),
-                    Letter("", LetterState.UNDEFINED),
-                    Letter("", LetterState.UNDEFINED),
-                    Letter("", LetterState.UNDEFINED),
-                    Letter("", LetterState.UNDEFINED)
-                )
-                newList
+                val newFiled = it.map { list -> list.toMutableList() }.toMutableList()
+                for (letterIdx in 0 until it[currentLine].size) {
+                    if (it[currentLine][letterIdx].state == LetterState.CORRECT) {
+                        newFiled[currentLine][letterIdx] = it[currentLine][letterIdx]
+                    } else {
+                        newFiled[currentLine][letterIdx] = Letter("", LetterState.UNDEFINED)
+                    }
+                }
+                newFiled
             }
             return
         }
@@ -116,10 +130,22 @@ class GameViewModel(
     }
 
     fun onHintClicked() {
-
+        val openedLetterIndex = hintIndexes.removeFirstOrNull()!!
+        val openedLetter = hiddenWord[openedLetterIndex]
+        if (openedLetterIndex == currentLetterPosition) {
+            currentLetterPosition++
+        }
+        _gameField.update {
+            val newList = it.map { list -> list.toMutableList() }.toMutableList()
+            for (line in currentLine until newList.size) {
+                newList[line][openedLetterIndex] =
+                    Letter(openedLetter.toString(), LetterState.CORRECT)
+            }
+            newList
+        }
     }
 
-    private fun initialize(firstTime: Boolean) {
+    private fun initializeGameField(firstTime: Boolean) {
         currentLine = 0
         currentLetterPosition = 0
         val emptyField = mutableListOf(
