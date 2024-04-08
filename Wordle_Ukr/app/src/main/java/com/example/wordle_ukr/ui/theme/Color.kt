@@ -15,3 +15,9 @@ val DarkPrimary = Color(0xFF666666)
 val MistakenCharDarkColor = Color(0xFF464646)
 val DarkTextColor = Color(0xFFECECEC)
 val DarkBackground = Color(red = 28, green = 27, blue = 31)
+
+
+val EasyLevel = Color(0xFF36FF39)
+val NormalLevel = Color(0xFFFFBE3A)
+val HardLevel = Color(0xFFFF4040)
+val MixedLevel = Color(0xFF5CC6FF)

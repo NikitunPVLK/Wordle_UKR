@@ -1,6 +1,9 @@
 package com.example.wordle_ukr.ui.view_models
 
+import android.content.res.Resources
 import androidx.lifecycle.ViewModel
+import com.example.wordle_ukr.R
+import com.example.wordle_ukr.ui.models.DifficultyLevel
 import com.example.wordle_ukr.ui.models.Letter
 import com.example.wordle_ukr.ui.models.LetterState
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -8,8 +11,10 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
 class GameViewModel(
-    private val wordsList: List<String>
+    private val resources: Resources,
 ) : ViewModel() {
+
+    private lateinit var wordsList: List<String>
 
     private lateinit var hiddenWord: String
 
@@ -31,11 +36,38 @@ class GameViewModel(
     }
 
     private fun restartGame(firstTime: Boolean) {
-//        hiddenWord = "абоба"
+        initializeGameField(firstTime)
+    }
+
+    fun onDifficultyLevelSelected(difficultyLevel: DifficultyLevel) {
+        wordsList = when (difficultyLevel) {
+            DifficultyLevel.EASY ->
+                resources.getStringArray(
+                    R.array.words_array
+                ).toList()
+
+            DifficultyLevel.NORMAL ->
+                resources.getStringArray(
+                    R.array.words_array
+                ).toList()
+
+            DifficultyLevel.HARD ->
+                resources.getStringArray(
+                    R.array.words_array
+                ).toList()
+
+            DifficultyLevel.MIXED ->
+                resources.getStringArray(
+                    R.array.words_array
+                ).toList()
+        }
+        initializeWord()
+    }
+
+    private fun initializeWord() {
         hiddenWord = wordsList.random()
         hintIndexes = mutableListOf(0, 1, 2, 3, 4)
         hintIndexes.shuffle()
-        initializeGameField(firstTime)
     }
 
     fun onKeyClicked(char: String) {
