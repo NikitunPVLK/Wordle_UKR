@@ -66,7 +66,7 @@ fun GameScreen(
             Text(
                 text = stringResource(id = R.string.hint),
                 fontSize = 30.sp,
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onPrimary,
                 fontFamily = Inter,
                 fontWeight = FontWeight.ExtraBold
             )

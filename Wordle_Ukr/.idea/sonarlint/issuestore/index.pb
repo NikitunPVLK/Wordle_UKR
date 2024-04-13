@@ -7,8 +7,6 @@ v
 Fapp/src/main/java/com/example/wordle_ukr/ui/activities/MainActivity.kt,c\e\ce13ac0f6ba0051f1015d9510f050129460be01f
 j
 :app/src/main/java/com/example/wordle_ukr/ui/theme/Theme.kt,9\8\987ed5eb1e0ccb52ad7ffea7eb94bb90f671324c
-q
-Aapp/src/main/java/com/example/wordle_ukr/ui/screens/GameScreen.kt,1\2\12103419e66ce03a6995e0ab931df9a2b39f972e
 i
 9app/src/main/java/com/example/wordle_ukr/ui/theme/Type.kt,3\2\3285b38eb474a336d16f45b934819816c06a0860
 j

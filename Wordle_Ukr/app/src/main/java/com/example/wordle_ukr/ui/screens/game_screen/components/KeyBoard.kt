@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -24,9 +25,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.wordle_ukr.R
+import com.example.wordle_ukr.ui.theme.DeleteKeyColor
 import com.example.wordle_ukr.ui.theme.Inter
-import com.example.wordle_ukr.ui.theme.KeyColor
-import com.example.wordle_ukr.ui.theme.SubmitKeyColor
+import com.example.wordle_ukr.ui.theme.Green
 
 @Composable
 fun Keyboard(
@@ -82,7 +83,7 @@ fun Key(
         modifier = modifier
             .width(dimensionResource(id = R.dimen.key_width))
             .height(dimensionResource(id = R.dimen.key_height)),
-        colors = ButtonDefaults.buttonColors(containerColor = KeyColor),
+        colors = ButtonDefaults.buttonColors(MaterialTheme.colorScheme.primary),
         shape = RoundedCornerShape(dimensionResource(id = R.dimen.key_radius)),
         contentPadding = PaddingValues(0.dp),
         elevation = ButtonDefaults.buttonElevation(dimensionResource(id = R.dimen.key_elevation)),
@@ -94,7 +95,7 @@ fun Key(
             text = char.uppercase(),
             fontFamily = Inter,
             fontWeight = FontWeight.ExtraBold,
-            color = Color.Black
+            color = MaterialTheme.colorScheme.onPrimary
         )
     }
 }
@@ -108,7 +109,7 @@ fun DeleteKey(
         modifier = modifier
             .width(dimensionResource(id = R.dimen.delete_key_width))
             .height(dimensionResource(id = R.dimen.delete_key_height)),
-        colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+        colors = ButtonDefaults.buttonColors(DeleteKeyColor),
         shape = RoundedCornerShape(dimensionResource(id = R.dimen.delete_key_radius)),
         contentPadding = PaddingValues(0.dp),
         elevation = ButtonDefaults.buttonElevation(dimensionResource(id = R.dimen.key_elevation)),
@@ -130,7 +131,7 @@ fun SubmitKey(
         modifier = modifier
             .width(dimensionResource(id = R.dimen.submit_key_width))
             .height(dimensionResource(id = R.dimen.submit_key_height)),
-        colors = ButtonDefaults.buttonColors(containerColor = SubmitKeyColor),
+        colors = ButtonDefaults.buttonColors(Green),
         shape = RoundedCornerShape(dimensionResource(id = R.dimen.submit_key_radius)),
         contentPadding = PaddingValues(0.dp),
         elevation = ButtonDefaults.buttonElevation(dimensionResource(id = R.dimen.key_elevation)),
