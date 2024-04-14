@@ -1,6 +1,9 @@
 R_DEF: Internal format may change without notice
 local
-array words_array
+array easy_words
+array hard_words
+array mixed_words
+array normal_words
 color black
 color purple_200
 color purple_500
