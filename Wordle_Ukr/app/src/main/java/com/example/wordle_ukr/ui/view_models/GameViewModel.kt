@@ -15,6 +15,7 @@ class GameViewModel(
 ) : ViewModel() {
 
     private lateinit var wordsList: List<String>
+    private val allWords = resources.getStringArray(R.array.mixed_words).toList()
 
     private lateinit var hiddenWord: String
 
@@ -59,10 +60,7 @@ class GameViewModel(
                     R.array.hard_words
                 ).toList()
 
-            DifficultyLevel.MIXED ->
-                resources.getStringArray(
-                    R.array.mixed_words
-                ).toList()
+            DifficultyLevel.MIXED -> allWords
         }
         initializeWord()
     }
@@ -133,7 +131,8 @@ class GameViewModel(
             _helperText.value = "Програв 8("
             return
         }
-        if (!wordsList.contains(guessedWordAsString)) {
+
+        if (!allWords.contains(guessedWordAsString)) {
             _helperText.value = "Не є словом :/"
             currentLine--
             _gameField.update {
