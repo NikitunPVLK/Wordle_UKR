@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/xml_backup_rules.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_regular.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_regular.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/drawable_hint_icon.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/drawable/hint_icon.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_black.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_black.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_thin.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_thin.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/drawable_backspace.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/drawable/backspace.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_semibold.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_semibold.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_extralight.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_extralight.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_extrabold.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_extrabold.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_light.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_light.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_medium.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "com.example.wordle_ukr.app-merged_res-45:/font_inter_bold.ttf.flat",
+        "source": "com.example.wordle_ukr.app-main-47:/font/inter_bold.ttf"
+    }
+]
