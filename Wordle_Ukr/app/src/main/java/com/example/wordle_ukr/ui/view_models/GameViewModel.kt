@@ -43,22 +43,22 @@ class GameViewModel(
         wordsList = when (difficultyLevel) {
             DifficultyLevel.EASY ->
                 resources.getStringArray(
-                    R.array.words_array
+                    R.array.easy_words
                 ).toList()
 
             DifficultyLevel.NORMAL ->
                 resources.getStringArray(
-                    R.array.words_array
+                    R.array.normal_words
                 ).toList()
 
             DifficultyLevel.HARD ->
                 resources.getStringArray(
-                    R.array.words_array
+                    R.array.hard_words
                 ).toList()
 
             DifficultyLevel.MIXED ->
                 resources.getStringArray(
-                    R.array.words_array
+                    R.array.mixed_words
                 ).toList()
         }
         initializeWord()

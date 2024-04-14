@@ -1,5 +1,8 @@
 com.example.wordle_ukr
-array words_array
+array easy_words
+array hard_words
+array mixed_words
+array normal_words
 attr alpha
 attr font
 attr fontProviderAuthority
