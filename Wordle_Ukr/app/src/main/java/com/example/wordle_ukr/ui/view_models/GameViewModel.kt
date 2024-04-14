@@ -37,6 +37,9 @@ class GameViewModel(
 
     private fun restartGame(firstTime: Boolean) {
         initializeGameField(firstTime)
+        if (!firstTime) {
+            initializeWord()
+        }
     }
 
     fun onDifficultyLevelSelected(difficultyLevel: DifficultyLevel) {
@@ -105,6 +108,11 @@ class GameViewModel(
     }
 
     fun onSubmitClicked() {
+        if (hintIndexes.isEmpty()) {
+            _helperText.value = "Перемога!"
+            restartGame(false)
+            return
+        }
         if (currentLetterPosition < 4) {
             return
         }
@@ -162,7 +170,7 @@ class GameViewModel(
     }
 
     fun onHintClicked() {
-        val openedLetterIndex = hintIndexes.removeFirstOrNull()!!
+        val openedLetterIndex = hintIndexes.removeFirstOrNull() ?: return
         val openedLetter = hiddenWord[openedLetterIndex]
         if (openedLetterIndex == currentLetterPosition) {
             currentLetterPosition++
