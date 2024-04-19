@@ -21,3 +21,5 @@ val EasyLevel = Color(0xFF36FF39)
 val NormalLevel = Color(0xFFFFBE3A)
 val HardLevel = Color(0xFFFF4040)
 val MixedLevel = Color(0xFF5CC6FF)
+
+val TopButtonsBackground = Color(0xFF5CC6FF)

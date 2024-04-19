@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                     if (showDialog) {
                         DifficultyLevelAlertDialog(
                             onDifficultyLevelSelected = {
-                                gameViewModel.onDifficultyLevelSelected(it)
+                                gameViewModel.onDifficultyLevelSelected(it, false)
                                 showDialog = false
                             }
                         )
@@ -53,7 +53,8 @@ class MainActivity : ComponentActivity() {
                         gameViewModel::onKeyClicked,
                         gameViewModel::onDeleteClicked,
                         gameViewModel::onSubmitClicked,
-                        gameViewModel::onHintClicked
+                        gameViewModel::onHintClicked,
+                        gameViewModel::onDifficultyLevelSelected
                     )
                 }
             }

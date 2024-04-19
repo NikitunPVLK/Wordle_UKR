@@ -43,7 +43,7 @@ class GameViewModel(
         }
     }
 
-    fun onDifficultyLevelSelected(difficultyLevel: DifficultyLevel) {
+    fun onDifficultyLevelSelected(difficultyLevel: DifficultyLevel, isNewLevel: Boolean) {
         wordsList = when (difficultyLevel) {
             DifficultyLevel.EASY ->
                 resources.getStringArray(
@@ -62,7 +62,11 @@ class GameViewModel(
 
             DifficultyLevel.MIXED -> allWords
         }
-        initializeWord()
+        if (isNewLevel) {
+            restartGame(false)
+        } else {
+            initializeWord()
+        }
     }
 
     private fun initializeWord() {

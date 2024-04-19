@@ -25,3 +25,13 @@ Wapp/src/main/java/com/example/wordle_ukr/ui/screens/game_screen/components/Game
 Mapp/src/main/java/com/example/wordle_ukr/ui/screens/game_screen/GameScreen.kt,9\7\971fa620e2ed5f90feaa2ff83d7d4bdef8e4cd28
 x
 Happ/src/main/java/com/example/wordle_ukr/ui/view_models/GameViewModel.kt,3\0\30bd60889cd2ede37e9bda7c962cb3f768598a08
+@
+build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+C
+settings.gradle.kts,7\4\749edfcc96398253e5b3416184e95c46621da850
+u
+Eapp/src/main/java/com/example/wordle_ukr/ui/models/DifficultyLevel.kt,1\5\154577171c41ae47009700bf690c903584f2097d
+˜
+happ/src/main/java/com/example/wordle_ukr/ui/screens/game_screen/components/DifficultyLevelAlertDialog.kt,7\b\7b50051f4b7d06d968dcbd46a2670473ac78d9d6

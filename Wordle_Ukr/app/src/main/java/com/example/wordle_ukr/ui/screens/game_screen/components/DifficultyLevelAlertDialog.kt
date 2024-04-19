@@ -31,12 +31,13 @@ import com.example.wordle_ukr.ui.theme.WordleUkrTheme
 fun DifficultyLevelAlertDialog(
     modifier: Modifier = Modifier,
     onDifficultyLevelSelected: (DifficultyLevel) -> Unit,
+    onDismissRequest: () -> Unit = {}
 ) {
     AlertDialog(
         modifier = modifier
             .width(300.dp)
             .height(420.dp),
-        onDismissRequest = {},
+        onDismissRequest = onDismissRequest,
         confirmButton = {},
         text = {
             Column(

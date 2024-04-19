@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
+  <component name="ModuleClassLoaderOverlays">
+    <paths>
+      <option value="C:\Users\nikit\AppData\Local\Temp\overlay16775752044704639348" />
+      <option value="C:\Users\nikit\AppData\Local\Temp\overlay1090560470828013278" />
+      <option value="C:\Users\nikit\AppData\Local\Temp\overlay10009397545758806468" />
+    </paths>
+  </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="769a8080-c966-4510-8c89-f926f9a119e5" />
   </component>

@@ -75,6 +75,7 @@ dimen submit_key_height
 dimen submit_key_radius
 dimen submit_key_width
 drawable backspace
+drawable baseline_menu_24
 drawable hint_icon
 drawable ic_call_answer
 drawable ic_call_answer_low
